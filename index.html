@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styling Example</title>
+
+    <!-- Стилі визначаються в блоці <style> всередині секції <head> -->
+    <style>
+      .internal-style {
+        color: black;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="internal-style">ПРИВІТ</p>
+
+    <!-- Стилі задаються безпосередньо в атрибуті style HTML-елемента. -->
+    <p
+      style="
+        color: black;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 100px;
+      "
+    >
+      ПРИВІТ
+    </p>
+
+    <!-- Стилі підключаються через зовнішній файл за допомогою тега <link> -->
+    <div class="external-style">ПРИВІТ</div>
+    <link rel="stylesheet" href="styles.css" />
+  </body>
+</html>
